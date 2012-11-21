@@ -25,6 +25,17 @@
             .space-above{
                 margin-top: 5%;
             }
+            #pulilab {
+                /*height: 80%;*/
+            }
+            #pulilab img {
+                width: 210px;
+                margin: 0px;
+                border: 1px solid transparent;
+            }
+            #pulilab .container {
+                min-height: 530px;
+            }
         </style>
 
         <!-- If the query includes 'print-pdf', use the PDF print sheet -->
@@ -43,6 +54,28 @@
 
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
+                <section>
+                    <h2>Javascript keretrendszerek a gyakorlatban</h2>
+                    <p>
+                        <small><a href="https://github.com/RichardOtvos">Ötvös Richárd</a> / <a href="http://pulilab.com">Pulilab Kft</a></small>
+                    </p>
+                </section>
+
+                <section id="pulilab">
+                    <h2>Kik is vagyunk?</h2>
+                    <div class="container">
+                        <img src="img/python-logo.gif" alt="" class="python">
+                    <img src="img/ios-logo.png" alt="" class="ios">
+                    <img src="img/Backbone_logo_logo_only.png" alt="" class="backbone">
+                    <img src="img/HTML5_Logo_512.png" alt="" class="html5">
+                    <img src="img/android_vector.png" alt="" class="android">
+                    <img src="img/java.png" alt="" class="java">
+                    <img src="img/javascript_logo.png" alt="" class="js">
+                    <img src="img/sysadmin-hero.png" alt="" class="sysop">
+                    <img src="img/django.png" alt="" class="django">
+                    <img src="img/nodejs.png" alt="" class="nodejs">
+                    </div>
+                </section>
 
                 <section>
                     <section>
@@ -253,6 +286,17 @@
             });
 
         </script>
-
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+        <script type="text/javascript">
+            Reveal.addEventListener( 'slidechanged', function( event ) {
+                // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+                if (event.indexh === 1) {
+                    $('#pulilab .container').isotope({
+                        itemSelector: 'img',
+                    });
+                }
+            } );
+        </script>
     </body>
 </html>
