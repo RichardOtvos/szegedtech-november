@@ -117,7 +117,7 @@
   
 
 
-                        <p class="left-aligned space-above">Megnőtt az igény a komplex webaplikációk iránt. Ezeknek a gyors fejlesztéséhez és könnyű karbantartásához azonban szükségünk van egy kis segítségre:</p>
+                        <p class="left-aligned space-above">Megnőtt az igény a komplex webapplikációk iránt. Ezeknek a gyors fejlesztéséhez és könnyű karbantartásához azonban szükségünk van egy kis segítségre:</p>
                         <p> <strong>MVC</strong> </p>
                     </section>
                 </section>
@@ -126,7 +126,7 @@
                     <section>
                         <h1>MVC</h1>
                         <p class="left-aligned">A back-end oldalról ismerős lehet, de <strong>a kliens oldali és a backend oldali MVC általában nem egyezik meg.</strong></p>
-                        <p class="left-aligned">A frameworkok-ben általában megtalálható Model és View, de a View nem a kalsszikus szerepét tölti be, és kevés helyen van Controller, ezért <strong>hívjuk ezeket inkább <a href="http://addyosmani.com/blog/digesting-javascript-mvc-pattern-abuse-or-evolution/"> MV*</a> frameworkoknek</strong></p>
+                        <p class="left-aligned">A frameworkok-ben általában megtalálható Model és View, de a View nem a klasszikus szerepét tölti be, és kevés helyen van Controller, ezért <strong>hívjuk ezeket inkább <a href="http://addyosmani.com/blog/digesting-javascript-mvc-pattern-abuse-or-evolution/"> MV*</a> frameworkoknek</strong></p>
                     </section>
 
                     <section>
@@ -145,7 +145,7 @@
                 <section>
                     <section>
                         <h2>Frameworkok összehasonlítása</h2>
-                        <p class="left-aligned">Ha ennyi féle MV* framework van, hogyan váalszthatom ki a nekem megfelelőbbet?</p>
+                        <p class="left-aligned">Ha ennyi féle MV* framework van, hogyan választhatom ki a nekem megfelelőbbet?</p>
                         <p class="left-aligned">Az egyszerűbb programokat szinte bármelyik népszerűbb MV* segítségével elkészíthetjük, de
                             van pár tényező ami befolyásolhatja a döntésünket:</p>
                             <ul>
@@ -160,7 +160,7 @@
                         <p><a href="http://addyosmani.github.com/todomvc/">Hivatalos oldal</a> | <a href="https://github.com/addyosmani/todomvc">Github oldal</a></p>
                         <p class="left-aligned">Ugyanaz az applikáció, de más frameworkokkel + jQuery + vanilla JS</p>
                         <p class="left-aligned">Az alapvető különbségeket jól lehet látni</p>
-                        <p class="left-aligned">De mi van ha ennél is többre vagyunk kíváncsiak?</p>
+                        <p class="left-aligned">De mi van, ha ennél is többre vagyunk kíváncsiak?</p>
                     </section>
                 </section>
 
@@ -168,12 +168,11 @@
                     <h1>Napimenü</h1>
                     <p><a href="https://github.com/nagyv/napimenu">Github</a></p>
                     <p class="left-aligned">Szerettük volna tudni, melyik JS framework alkalmas az egyik projektünkre.</p>
-                    <p class="left-aligned">A TODO MVC által bemutatottak sajnos kevésnek bizonyultak, amire nekünk szükségünk lett
-                        volna még:</p>
+                    <p class="left-aligned">A TODO MVC által bemutatottak sajnos kevésnek bizonyultak. Amire nekünk szükségünk lett volna még:</p>
                         <ul>
                             <li>Dinamikusan változó nézetek</li>
                             <li>Szinkronizáció a backenddel</li>
-                            <li>Könnyű karbantartás</li>
+                            <li>Könnyű karbantarthatóság</li>
                         </ul>
                 </section>
 
@@ -186,7 +185,7 @@
                         <li>Össze-vissza callback kódok</li>
                         <li>Minden 1 fájlban</li>
                         <li>Nehéz karbantartani a templateket</li>
-                        <li>Nehéz a DOM-ot szinkronban tartani a 'modellünkkel'</li>
+                        <li>Nehéz a DOM-ot szinkronban tartani a "modellünkkel"</li>
                         <li>Rémálom karbantartani</li>
                     </ul>
                 </section>
@@ -199,10 +198,10 @@
                             <li>Nincs dependency</li>
                             <li>2-way data-binding</li>
                             <li>MVVM pattern</li>
-                            <li>Atomat UI refresh</li>
+                            <li>Atomata UI refresh</li>
                             <li>Beépített templating</li>
                             <li>Nagyon jó tutorial</li>
-                            <li>A modellek kezelés nem jól megoldott</li>
+                            <li>A modellek kezelése nem jól megoldott</li>
                         </ul>
                     </section>
                 </section>
@@ -224,7 +223,7 @@
                         <p>Különböző, gyakran használt elemek megvalóítása a Backbone-hoz.</p>
                         <ul>
                             <li>Eseménykezelés</li>
-                            <li>Különböző gyakran használt view típusok</li>
+                            <li>Különböző, gyakran használt view típusok</li>
                             <li>Modulok kezelése</li>
                             <li>Viszonylag sok depenency</li>
                         </ul>
@@ -233,7 +232,7 @@
                         <h1>AMD</h1>
                         <p><a href="http://requirejs.org/docs/whyamd.html#purposes">Aszinkron modul definíció</a> | <a href="http://requirejs.org/">Require.js</a> </p>
                         <ul>
-                            <li>Hova rakjuk a script tageket, hogy az biztosan betöltődjön?</li>
+                            <li>Hova rakjuk a script taget, hogy az biztosan betöltődjön?</li>
                             <li>Szeretnénk szétbonani a kódot több fájlra, de mi van, ha az egyik
                                 kód a másikra épül?</li>
                             <li>Jó lenne, ha nem szennyeznénk a global namespacet</li>
@@ -244,8 +243,7 @@
                     <section>
                         <h1>AMD (folyt.)</h1>
                         <p class="left-aligned space-above">Ilyenkor jön jól az AMD. A kódot több modulra darabolhatjuk, és ezek között megadhatunk függőségeket is.</p>
-                        <p class="left-aligned space-above">Az egész app indítása egy main.js fileból történik, így könyebb átlátni a program
-                            működését, a modulok karbantartása pedig sokkal könnyebb, mint 1 db hatalams fájlé. </p>
+                        <p class="left-aligned space-above">Az egész app indítása egy main.js fileból történik, így könnyebb átlátni a program működését, a modulok karbantartása pedig sokkal egyszerűbb, mint 1 db hatalams fájlé. </p>
                     </section>
                 </section>
 
